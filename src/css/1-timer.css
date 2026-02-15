@@ -1,0 +1,161 @@
+.wrap {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+#datetime-picker {
+  margin-right: 8px;
+  padding: 8px 16px;
+  width: 272px;
+  height: 40px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+
+  transition: border-color 250ms ease-in-out;
+}
+
+#datetime-picker:hover,
+#datetime-picker:focus {
+  border-color: #000000;
+}
+
+#datetime-picker:active {
+  border-color: #4e75ff;
+}
+
+#datetime-picker:disabled {
+  background-color: #fafafa;
+  border-color: #808080;
+  color: #808080;
+}
+
+.button {
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+  border: transparent;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+
+  transition: background-color 250ms ease-in-out;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #6c8cff;
+}
+
+.button:disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+}
+
+.timer {
+  display: flex;
+  width: 346px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.83;
+}
+
+.label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.67;
+  text-transform: uppercase;
+}
+
+.flatpickr-day {
+  color: #666666 !important;
+}
+
+.flatpickr-day.today {
+  border: 1px solid #4e75ff !important;
+  background-color: transparent !important;
+}
+
+.flatpickr-day:hover {
+  background-color: #c1c1c1 !important;
+}
+
+.flatpickr-day.selected {
+  background-color: #4e75ff !important;
+  color: #ffffff !important;
+}
+
+.custom-error-toast {
+  width: 432px !important;
+  padding: 20px !important;
+  min-height: 88px !important;
+  background-color: #ef4040 !important;
+  border-radius: 4px !important;
+}
+
+.custom-error-toast .iziToast-message {
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  letter-spacing: 0.5px !important;
+  color: #fafafb !important;
+}
+
+.custom-error-toast .iziToast-progressbar {
+  background-color: #ffbebe !important;
+}
+.custom-error-toast .iziToast-progressbar > div {
+  background-color: #b51b1b !important;
+}
+
+.custom-error-toast .iziToast-close {
+  cursor: pointer !important;
+  position: absolute !important;
+  top: 50% !important;
+  right: 12px !important;
+  transform: translateY(-50%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  z-index: 1 !important;
+}
+
+.custom-error-toast .iziToast-close::after {
+  content: '' !important;
+  display: block !important;
+  width: 20px !important;
+  height: 20px !important;
+  background: url('../img/arrow_right.svg') no-repeat center center !important;
+  background-size: contain !important;
+}
+
+.iziToast > .iziToast-body {
+  margin: 0 !important;
+}
